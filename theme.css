@@ -15,6 +15,11 @@ body {
     font-family: Kiwi Maru;
 }
 
+/* Cursor */
+.cursor {
+    position: fixed;
+    background-image: 
+    
 /* HEADER */
 
 .header {
@@ -50,7 +55,7 @@ body {
     text-shadow: initial;
     font-size: 36pt;
     font-weight: normal;
-	text-shadow: 5px 5px 0px rgba(95, 90, 74, 0.35);
+    text-shadow: 5px 5px 0px rgba(95, 90, 74, 0.35);
     text-decoration: underline;
     letter-spacing: 0px;
 }
@@ -60,7 +65,7 @@ body {
     text-shadow: initial;
     font-size: 36pt;
     font-weight: normal;
-	text-shadow: 5px 5px 0px rgba(95, 90, 74, 0.35);
+    text-shadow: 5px 5px 0px rgba(95, 90, 74, 0.35);
     text-decoration: underline;
     letter-spacing: 0px;
 }
