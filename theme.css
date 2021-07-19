@@ -13,13 +13,10 @@ body {
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(50px);
     font-family: Kiwi Maru;
+    cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/homa%20normal.png), auto !important;
 }
 
 /* Cursor (some values arent even being used lol) */
-
-body {
-cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/homa%20normal.png), auto !important;
-}
 
 a:hover,
 .data.tags span a,
@@ -37,8 +34,7 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
 
 .header {
     display: block;
-    height: 50000px; /* so the cursor can work */
-    width: 50000px; /* so the cursor can work */
+    height: 0px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
