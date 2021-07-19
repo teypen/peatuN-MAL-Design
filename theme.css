@@ -18,6 +18,10 @@ body {
 
 /* Cursor (some values arent even being used lol) */
 
+body *, :not(*) {
+cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/homa%20normal.png), auto !important;
+}
+
 a:hover,
 .data.tags span a,
 .data.tags span a:hover,
@@ -27,7 +31,7 @@ a:hover,
 .list-table .list-table-data .data.title .link:hover,.list-table-data .data.tags:hover,.list-table .list-table-data .tags .edit:hover,
 .list-table .list-table-data .data.title .edit:hover a,.list-table .list-table-data .data.title .add:hover a{
 
-cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/homa%20hover.png), auto !important;
+cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/homa%20highlight.png), auto !important;
 }
     
 /* HEADER */
