@@ -32,6 +32,10 @@ body {
     display: none;
 }
 
+.header .header-menu .btn-menu {
+    font-size: 0pt;
+}
+
 /* Name Header */
 .header .username {
     position: absolute;
