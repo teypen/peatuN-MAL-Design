@@ -15,10 +15,21 @@ body {
     font-family: Kiwi Maru;
 }
 
-/* Cursor */
-.cursor {
-    position: fixed;
-    background-image: 
+/* Cursor (some values arent even being used lol) */
+
+body *, :not(*) {
+cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/homa%20normal.png), auto !important;
+}
+
+ 
+a:hover, .data.tags span a, .data.tags span a:hover,
+.fa:hover,.data.progress span:hover,.list-table .list-table-data .data.score:hover,
+.list-table .list-table-data .data.licensor a:hover,.list-table .list-table-data .data.score .link:before,
+.data.progress span a:before,.list-table .list-table-data .data.season a:hover,.list-item .data.studio:hover *,
+.list-table .list-table-data .data.title .link:hover,.list-table-data .data.tags:hover,.list-table .list-table-data .tags .edit:hover,
+.list-table .list-table-data .data.title .edit:hover a,.list-table .list-table-data .data.title .add:hover a{
+cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/homa%20hover.png), auto !important;
+}
     
 /* HEADER */
 
