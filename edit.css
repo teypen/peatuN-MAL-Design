@@ -1,0 +1,623 @@
+/* Thank you to ValerioLyndon (Clarity MAL) and killingdyl + r1404 (Nier Automata MAL) as both have been a huge help to create this theme. */
+/* Links: https://github.com/rl404/MyAnimeList/tree/master/NierAutomata, https://github.com/ValerioLyndon/MAL-Public-List-Designs/tree/master/Clarity%20Theme */
+/* It is not very optimised currently and it is still a WIP, but hopefully it is still useable. */
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru');
+@import url('https://fonts.googleapis.com/css2?family=Exo');
+
+body {
+    background: center fixed !important;
+    background-image: url(https://i.imgur.com/Euwbt56.jpeg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(50px);
+	font-family: Kiwi Maru;
+}
+
+/* HEADER */
+
+.header {
+    display: block;
+    height: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: -1;
+}
+
+.header> :not(.header-menu),
+.header .header-menu> :not(.btn-menu) {
+    display: none;
+}
+
+/* Name Header */
+.header .username {
+    position: absolute;
+    color: #bd1111 !important;
+	top: -400px;
+	left: -1300px;
+	font-size: 00pt;
+}
+
+.anime .header .username::after {
+    content: "PeatuN's List of Anime";
+    text-shadow: initial;
+    font-size: 36pt;
+    font-weight: normal;
+	text-shadow: 5px 5px 0px rgba(95, 90, 74, 0.35);
+    text-decoration: underline;
+    letter-spacing: 0px;
+}
+
+.manga .header .username::after {
+    content: "PeatuN's List of Manga";
+    text-shadow: initial;
+    font-size: 36pt;
+    font-weight: normal;
+	text-shadow: 5px 5px 0px rgba(95, 90, 74, 0.35);
+    text-decoration: underline;
+    letter-spacing: 0px;
+}
+
+/* LIST MENU */
+
+.list-menu-float {
+    display: block;
+	border: none;
+	top: auto;
+}
+
+.list-menu-float .icon-menu {
+	background-color: #000000;
+}
+
+.list-menu-float .icon-menu svg.icon {
+	fill: #FFFFFF!important;
+}
+
+.list-menu-float .icon-menu.setting {
+	display: none;
+}
+.list-menu-float .icon-menu .text {
+	font-family: Exo!important;
+}
+
+/* LIST TRANSITIONS */
+.list-table > tbody:first-of-type:after
+{
+	display: inline-block;
+	height: 26px !important;
+	width: 26px !important;
+	background: transparent !important;
+	border-radius: 13px;
+	box-shadow: 0px 1px 2px transparent;
+	overflow: hidden;
+	
+	color: FFFFFF !important;
+	font: Exo!important;
+	text-indent: 0;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	
+	transition: all 0.3s ease !important;
+}
+
+.header .header-title:hover,
+.icon-menu:hover,
+.list-menu-float .icon-menu:hover,
+.stats a:hover
+{
+	width: 100px !important;
+	background: transparent !important;
+	color: transparent !important;
+}
+
+/* LIST CONTAINER */
+
+#list-container {
+    background-color: transparent;
+    display: block;
+    margin-top: 500px;
+    margin-left: auto;
+    margin-bottom: 75px;
+    padding: 0px;
+    border: none;
+    width: 100%;
+}
+
+#list-container::before {
+    content: '';
+    display: block;
+    background: center fixed;
+    background-image: null;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 190px;
+    width: 100%;
+    z-index: 1;
+}
+
+#list-container::after {
+    content: '';
+    display: block;
+    background: center fixed;
+    background-image: null;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 65px;
+    width: 100%;
+    z-index: 1;
+}
+
+.list-block::before {
+    content: '';
+    display: block;
+    background: center;
+    background-image: null;
+    background-repeat: repeat-y;
+    position: fixed;
+    top: 190px;
+    bottom: 65px;
+    left: 60px;
+    height: auto;
+    width: 30px;
+}
+
+.list-block::after {
+    content: '';
+    display: block;
+    background-image: null;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    bottom: 25px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    z-index: 2;
+}
+
+.list-menu-float .icon-menu.profile {
+	top: -410px;
+	left: 1620px;
+    width: 100px !important;
+	height: 100px !important;
+    background-size: cover;	
+	background-image: url(https://i.imgur.com/Z593UTH.jpeg)!important;
+	border-radius: 50%;
+	border: none;
+	transition: .15s ease;
+	
+}
+
+.icon-menu.profile:hover,
+.list-menu-float .icon-menu.profile:hover,
+.stats a.profile:hover
+{
+	left-margin: 100px;
+	width: 100px !important;
+	height: 100px !important;
+	background-image: url(https://i.imgur.com/OzeVboR.png)!important;
+	color: transparent!important;
+	border-radius: 50%;
+	border: none;
+
+}
+
+/* STATUS MENU */
+
+#status-menu,
+#status-menu .fixed {
+    background-image: url(https://media1.tenor.com/images/79ed68e9dbe2617afd0f0a5116af86a9/tenor.gif?itemid=20557082);
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 120px;
+    width: 100%;
+    border: none;
+}
+
+.status-menu-container .status-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 35px 0px 55px;
+    height: 70px;
+}
+
+#status-menu::before {
+    content: '';
+    display: block;
+    background: center;
+    background-image: null;
+    background-repeat: repeat-y;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    height: 50px;
+    width: 30px;
+}
+
+#status-menu::after {
+    content: '';
+    display: block;
+    height: 30px;
+    width: 100%;
+    background: left;
+    background-image: null;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#status-menu .status-button {
+    /* All status buttons */
+    background: #000000;
+    color: #FFFFFF;
+    display: table-cell;
+    position: static;
+    width: 14%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5vh;
+    letter-spacing: 3.5px;
+    /* 	text-indent: 20px; */
+    border-radius: 3px 3px 3px 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0px 0px 6px #aea993;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	font-family: Exo;
+}
+
+#status-menu .status-button.on {
+    transition: background .2s, color .2s, height .2s;
+    background: #daa520;
+    color: #FFFFFF;
+    font-weight: normal;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0px 0px 6px #5f5a4a;
+}
+
+#status-menu .status-button:hover {
+    transition: background .2s, color .2s, height .2s, box-shadow .2s;
+    background: #bd1111;
+    color: #d1cbb3;
+    box-shadow: 0px 0px 6px #bd1111;
+}
+
+#status-menu .status-button.on::after {
+    content: '';
+    display: block;
+    background: center;
+    background-color: transparent;
+    background-image: url();
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 42px;
+    position: absolute;
+    top: 25px;
+    pointer-events: none;
+}
+
+#status-menu .status-button::after {
+    display: none;
+}
+
+#status-menu .status-button.on.all_anime::after {
+    left: calc(75px + (100% - 160px) * .172 * 0);
+}
+
+#status-menu .status-button.on.watching::after,
+#status-menu .status-button.on.reading::after {
+    left: calc(75px + (100% - 160px) * .172 * 1);
+}
+
+#status-menu .status-button.on.completed::after {
+    left: calc(75px + (100% - 160px) * .172 * 2);
+}
+
+#status-menu .status-button.on.onhold::after {
+    left: calc(75px + (100% - 160px) * .172 * 3);
+}
+
+#status-menu .status-button.on.dropped::after {
+    left: calc(75px + (100% - 160px) * .172 * 4);
+}
+
+#status-menu .status-button.on.plantowatch::after,
+#status-menu .status-button.on.plantoread::after {
+    left: calc(75px + (100% - 160px) * .172 * 5);
+}
+
+.status-button.watching,
+.status-button.plantowatch,
+.status-button.reading,
+.status-button.plantoread {
+    overflow: hidden;
+    font-size: 0pt !important;
+    letter-spacing: -1px !important;
+}
+
+.status-button.watching::before {
+    content: 'Watching';
+    font-size: 2.5vh;
+    letter-spacing: 3.5px !important;
+}
+
+.status-button.reading::before {
+    content: 'Reading';
+    font-size: 2.5vh;
+    letter-spacing: 3.5px !important;
+}
+
+.status-button.plantowatch::before,
+.status-button.plantoread::before {
+    content: 'Planned';
+    font-size: 2.5vh;
+    letter-spacing: 3.5px !important;
+}
+
+/* Search Bar */
+
+.status-menu-container .search-container {
+	top: 125px;
+	left: 1470px;
+	z-index: 0;
+}
+
+#search-box {
+	padding-right: 0px;
+	border: 2px solid transparent;
+	border-radius: 13px;
+	margin-top: 0 !important;
+}
+
+#search-box.open {
+    left: 0px
+	width: 10px !important;
+	background-color: linear-gradient(#000000, #bd1111, 20%);
+	border: 2px solid #FFFFFF;
+}
+
+#search-box input {
+	background: none;
+	border: none;
+	border-radius: 13px;
+	outline: none;
+	color: #FFFFFF;
+}
+
+#search-box.open input {
+	text-indent: 7.5px;
+	line-height: 20px;
+}
+
+.status-menu-container .search-container #search-button {
+	position: center;
+	left: 0px;
+	top: 0;
+	
+	width: 26px;
+	height: 26px;
+	border-radius: 13px;
+	margin-top: 0;
+	
+	text-align: center;
+}
+
+.open ~ #search-button {
+	pointer-events: none;
+}
+
+#search-button i {
+	color: #FFFFFF !important;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.open ~ #search-button i {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/* STATUS TITLE */
+
+.list-unit .list-status-title {
+    display: none;
+    margin: 0px;
+}
+
+.list-unit .list-status-title * {
+    margin: 0px !important;
+}
+
+/* LIST TABLE */
+
+.list-table {
+    border: none;
+}
+
+/* Sort row */
+
+.list-table .list-table-header {}
+
+.list-table tbody:first-child {
+    background-color: #ed411a;
+}
+
+.list-table .list-table-header .header-title {
+    /* All sort cells */
+    background: none;
+    border: none;
+}
+
+.list-table .list-table-header .header-title a:hover {
+    color: #FFFFFF !important;
+}
+
+.list-table .list-table-header .header-title.title {
+    /* Specific sort cell */
+	color: #000000
+}
+
+.list-table .list-table-header .header-title .link {
+	color: #000000
+}
+.list-table .list-table-header .header-title .link.sort {
+	color: #000000
+}
+
+/* Data rows */
+
+.list-table tbody.list-item {
+    background-color: #000000;
+    color: #FFFFFF;
+    transition: background-color .2s, color .2s;
+	opacity: 85%;
+}
+
+.list-table tbody.list-item:hover {
+    background-color: #000000;
+    color: #bd1111;
+    transition: background-color .2s, color .2s;
+}
+
+.list-table tbody.list-item::before {
+    content: '';
+    background-position: center;
+    background-image: null;
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 50px;
+    position: absolute;
+    left: -58px;
+    opacity: 0;
+    transition: opacity .2s;
+    pointer-events: none;
+}
+
+.list-table tbody.list-item:hover::before {
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+.list-table .list-table-data .data.title {
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-table tbody tr,
+.list-table tbody tr td {
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list-table .list-table-data a,
+.list-table .list-table-data a.edit-disabled,
+.list-table .list-table-data a:not(.edit-disabled):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.list-table .list-table-data .data {
+    /* All data cells */
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-table .list-table-data .data.score a {
+    /* Specific data cell */
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+}
+
+.data.image {
+	width: 48px;
+	height: 64px;
+	margin: 4px 0 4px 8px;
+	border-radius: 1px 1px 1px 1px;
+	order: 1;
+}
+
+.list-table .list-table-data .data.image a {
+	display: block;
+}
+
+.data.image img {
+	width: 48px !important;
+	height: 64px !important;
+	border: none !important;
+	border-radius: 1px 1px 1px 1px;
+	object-fit: cover;
+}
+
+.list-table .list-table-data .tags .edit {
+    font-size: 7pt;
+	font-family: Exo;
+}
+
+.list-table .list-table-data .tags .edit,
+.list-table .list-table-data .tags .edit:hover {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+
+.list-table .list-table-data .data.status {
+    display: block;
+    height: 30px;
+    width: 5px;
+    margin-top: 36px;
+}
+
+.list-table .list-table-data .data.status.reading,
+.list-table .list-table-data .data.status.watching {
+    background-color: #59bfff;
+}
+
+.list-table .list-table-data .data.status.completed {
+    background-color: #00FF00;
+}
+
+.list-table .list-table-data .data.status.onhold {
+    background-color: #FFFF00;
+}
+
+.list-table .list-table-data .data.status.dropped {
+    background-color: #FF0000;
+}
+
+.list-table .list-table-data .data.status.plantoread,
+.list-table .list-table-data .data.status.plantowatch {
+    background-color: #808080;
+}
+
+.add-edit-more {
+    display: none;
+}
+
+.icon-watch {
+    display: none !important;
+}
+
+footer * {
+    display: none;
+}
