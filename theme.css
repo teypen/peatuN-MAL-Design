@@ -38,7 +38,7 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
 
 .header {
     display: block;
-    height: 0px;
+    height: 1px; /* fixes cursor problem */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -59,8 +59,8 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
 .header .username {
     position: absolute;
     color: #bd1111 !important;
-	top: -300px;
-	left: -1300px;
+	top: 100px;
+	left: -1480px;
 	font-size: 00pt;
 }
 
@@ -209,9 +209,16 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
     z-index: 2;
 }
 
+.list-menu-float {
+    position: fixed;
+    top: 500px;
+}
+
+/* Profile Pic */
+
 .list-menu-float .icon-menu.profile {
-	top: -310px;
-	left: 1620px;
+	top: -410px;
+	left: 1610px;
     width: 100px !important;
 	height: 100px !important;
     background-size: cover;	
