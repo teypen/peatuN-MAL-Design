@@ -214,6 +214,8 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
     top: 500px;
 }
 
+
+
 /* Profile Pic */
 
 .list-menu-float .icon-menu.profile {
@@ -482,6 +484,16 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
     border: none;
 }
 
+/* Rounded Edges*/
+.list-table .list-table-header .header-title.tags {
+    width: 120px;
+    border-radius: 0px 5px 0px 0px!important;
+}
+.list-table .list-table-header .header-title.status {
+    width: 10px;
+    border-radius: 5px 0px 0px 0px!important;
+}
+
 /* Sort row */
 
 .list-table .list-table-header {}
@@ -501,7 +513,6 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
 }
 
 .list-table .list-table-header .header-title.title {
-    /* Specific sort cell */
 	color: #000000
 }
 
@@ -566,14 +577,12 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
 }
 
 .list-table .list-table-data .data {
-    /* All data cells */
     border: none;
     padding: 0px;
     margin: 0px;
 }
 
 .list-table .list-table-data .data.score a {
-    /* Specific data cell */
     display: block;
     width: 100%;
     height: 100%;
@@ -638,6 +647,18 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
 .list-table .list-table-data .data.status.plantoread,
 .list-table .list-table-data .data.status.plantowatch {
     background-color: #808080;
+}
+
+/* Bottom Rounded Corners */
+
+.list-unit .loading-space,
+.list-unit .loading-space * {
+    background-color: #000000;
+    margin: 0px;
+    height: 5px;
+    width: 100%;
+    opacity: 85%;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .add-edit-more {
