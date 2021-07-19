@@ -7,7 +7,7 @@
 
 body {
     background: center fixed !important;
-    background-image: url(https://i.imgur.com/Euwbt56.jpeg) !important;
+    background-image: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/background.jpg) !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     scroll-snap-type: mandatory;
@@ -192,7 +192,7 @@ body {
     width: 100px !important;
 	height: 100px !important;
     background-size: cover;	
-	background-image: url(https://i.imgur.com/Z593UTH.jpeg)!important;
+	background-image: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/hu%20tao%20pfp.png)!important;
 	border-radius: 50%;
 	border: none;
 	transition: .15s ease;
@@ -206,7 +206,7 @@ body {
 	left-margin: 100px;
 	width: 100px !important;
 	height: 100px !important;
-	background-image: url(https://i.imgur.com/OzeVboR.png)!important;
+	background-image: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/ghost.png)!important;
 	color: transparent!important;
 	border-radius: 50%;
 	border: none;
@@ -217,7 +217,7 @@ body {
 
 #status-menu,
 #status-menu .fixed {
-    background-image: url(https://media1.tenor.com/images/79ed68e9dbe2617afd0f0a5116af86a9/tenor.gif?itemid=20557082);
+    background-image: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/hu%20tao%20ghost.gif);
     display: block;
     position: fixed;
     left: 0px;
