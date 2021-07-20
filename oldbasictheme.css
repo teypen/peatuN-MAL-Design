@@ -486,6 +486,10 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
     border-radius: 5px 0px 0px 0px!important;
 }
 
+.list-table .list-table-header .header-title.priority {
+    border-radius: 0px 5px 0px 0px!important;
+}
+
 /* Sort row */
 .list-table .list-table-header {}
 
