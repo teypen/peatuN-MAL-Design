@@ -1,0 +1,771 @@
+/* Thank you to ValerioLyndon (Clarity MAL) and killingdyl + r1404 (Nier Automata MAL) as both have been a huge help to create this theme. */
+/* Links: https://github.com/rl404/MyAnimeList/tree/master/NierAutomata, https://github.com/ValerioLyndon/MAL-Public-List-Designs/tree/master/Clarity%20Theme */
+/* It is not very optimised currently and it is still a WIP, but hopefully it is still useable. */
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru');
+@import url('https://fonts.googleapis.com/css2?family=Exo');
+
+body {
+    background: center fixed !important;
+    background-image: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/background.jpg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(50px);
+    font-family: Kiwi Maru;
+    cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/homa%20normal.png), auto !important;
+}
+
+/* Cursor Changes */
+
+body *, :not(*) {
+cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/homa%20normal.png), auto !important;
+}
+
+a:hover,
+.data.tags span a,
+.data.tags span a:hover,
+.fa:hover,.data.progress span:hover,.list-table .list-table-data .data.score:hover,
+.list-table .list-table-data .data.licensor a:hover,.list-table .list-table-data .data.score .link:before,
+.data.progress span a:before,.list-table .list-table-data .data.season a:hover,.list-item .data.studio:hover *,
+.list-table .list-table-data .data.title .link:hover,.list-table-data .data.tags:hover,.list-table .list-table-data .tags .edit:hover,
+.list-table .list-table-data .data.title .edit:hover a,.list-table .list-table-data .data.title .add:hover a, .header .header-menu .list-menu .icon-menu svg.icon:hover {
+
+cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/homa%20highlight.png), auto !important;
+}
+    
+/* Header */
+.header {
+    display: flex;
+    height: 1px; /* fixes cursor problem */
+    z-index: 10;
+}
+
+.header > :not(.header-menu),
+.header .header-menu> :not(.btn-menu) {
+    display: flex;
+}
+
+
+
+.anime .header .header-title {
+	top: 130px;
+	left: -404px;
+	display: solid;
+	background-image: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/abannerbig.png);
+	pointer-events: none;
+	height: 74px;
+	width: 567px;
+	background-size: auto;
+}
+
+
+.manga .header .header-title {
+	top: 126px;
+	left: -405px;
+	display: solid;
+	background-image: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/mbannerbig.png);
+	pointer-events: none;
+	height: 74px;
+	width: 570px;
+	background-size: auto;
+}
+
+
+	
+.btn-menu {
+	height: 0;
+	font-size: 0 !important;
+}
+
+
+/* Remove unnecessary javascript dropdown button */
+.btn-menu #header-menu-button { display: none; }
+
+
+/* Name Header */
+.header .username {
+    content: ""!important;
+    position: absolute;
+    color: #bd1111 !important;
+	top: 100px;
+	left: -1440px;
+	font-size: 00pt;
+}
+
+.btn-menu span.username { display: none !important; }
+
+.status-menu:after {
+	content:"";
+	position: absolute;
+	top: 100px;
+	left: 1610px;
+	
+	width: 150px;
+	height: 150px;
+	background: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/hu%20tao%20pfp.png) no-repeat center top / cover;
+	border-radius: 50%;
+	opacity: 1;
+}
+
+/* Anime/Manga List Buttons */
+
+.header .header-menu .list-menu {
+	position: block;
+	order: 1;
+	display: block;
+	height: 0px;
+	border: none;
+	background: none;
+	box-shadow: none;
+}
+
+.header .icon-menu.manga-list, .header .icon-menu.anime-list {
+	position: fixed!important;
+	top:400px!important;
+	left:0px!important;
+	font-size: 0 !important;
+	font-weight: normal !important;
+	display: block;
+	background-color: #bd1111!important;
+	height: 50px!important;
+	width: 50px!important;
+}
+
+.header .icon-menu.manga-list .text, .header .icon-menu.anime-list .text {
+	font-size: 0px!important;
+}
+
+.header .header-menu .list-menu .icon-menu svg.icon {
+	position: fixed;
+	top:412px;
+	left:14px;
+	max-width: 30px;
+	max-height: 30px;
+	fill: #FFFFFF;
+
+
+}
+
+/* List Menu */
+.list-menu-float {
+    display: block;
+	border: none;
+	top: auto;
+}
+
+.list-menu-float .icon-menu {
+	background-color: #000000;
+}
+
+.list-menu-float .icon-menu svg.icon {
+	fill: #FFFFFF!important;
+}
+
+.list-menu-float .icon-menu.setting {
+	display: none;
+}
+.list-menu-float .icon-menu .text {
+	font-family: Exo!important;
+}
+
+/* List Transitions */
+.list-table > tbody:first-of-type:after
+{
+	display: inline-block;
+	height: 26px !important;
+	width: 26px !important;
+	background: transparent !important;
+	border-radius: 13px;
+	box-shadow: 0px 1px 2px transparent;
+	overflow: hidden;
+	
+	color: FFFFFF !important;
+	font: Exo!important;
+	text-indent: 0;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	
+	transition: all 0.3s ease !important;
+}
+
+.header .header-title:hover,
+.icon-menu:hover,
+.list-menu-float .icon-menu:hover,
+.stats a:hover
+{
+	width: 100px !important;
+	background: transparent !important;
+	color: transparent !important;
+}
+
+/* List Container */
+#list-container {
+    background-color: transparent;
+    display: block;
+    margin-top: 400px;
+    margin-left: auto;
+    margin-bottom: 75px;
+    padding: 0px;
+    border: none;
+    width: 100%;
+}
+
+#list-container::before {
+    content: '';
+    display: block;
+    background: center fixed;
+    background-image: null;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 190px;
+    width: 100%;
+    z-index: 1;
+}
+
+#list-container::after {
+    content: '';
+    display: block;
+    background: center fixed;
+    background-image: null;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 65px;
+    width: 100%;
+    z-index: 1;
+}
+
+.list-block::before {
+    content: '';
+    display: block;
+    background: center;
+    background-image: null;
+    background-repeat: repeat-y;
+    position: fixed;
+    top: 190px;
+    bottom: 65px;
+    left: 60px;
+    height: auto;
+    width: 30px;
+}
+
+.list-block::after {
+    content: '';
+    display: block;
+    background-image: null;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    bottom: 25px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    z-index: 2;
+}
+
+.list-menu-float {
+    position: fixed;
+    top: 500px;
+}
+
+/* Profile Pic */
+.list-menu-float .icon-menu.profile {
+	top: 185px;
+	left: 80px;
+    width: 100px !important;
+	height: 100px !important;
+    background-size: cover;	
+	border-radius: 50%;
+	border: none;
+	transition: .15s ease;
+	
+}
+
+.icon-menu.profile:hover,
+.list-menu-float .icon-menu.profile:hover,
+.stats a.profile:hover
+{
+	left-margin: 100px;
+	width: 100px !important;
+	height: 100px !important;
+	background-image: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/ghost.png)!important;
+	color: transparent!important;
+	border-radius: 50%;
+	border: none;
+
+}
+
+/* Status Menu */
+#status-menu,
+#status-menu .fixed {
+    background-image: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/hu%20tao%20ghost.gif);
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 120px;
+    width: 100%;
+    border: none;
+    z-index: 100;
+}
+
+.status-menu-container .status-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 35px 0px 55px;
+    height: 70px;
+}
+
+#status-menu::before {
+    content: '';
+    display: block;
+    background: center;
+    background-image: null;
+    background-repeat: repeat-y;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    height: 50px;
+    width: 30px;
+}
+
+#status-menu::after {
+    content: '';
+    display: block;
+    height: 30px;
+    width: 100%;
+    background: left;
+    background-image: null;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#status-menu .status-button {
+    /* All status buttons */
+    background: #000000;
+    color: #FFFFFF;
+    display: table-cell;
+    position: static;
+    width: 14%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5vh;
+    letter-spacing: 3.5px;
+    /* 	text-indent: 20px; */
+    border-radius: 3px 3px 3px 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0px 0px 6px #aea993;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	font-family: Exo;
+}
+
+#status-menu .status-button.on {
+    transition: background .2s, color .2s, height .2s;
+    background: #daa520;
+    color: #FFFFFF;
+    font-weight: normal;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0px 0px 6px #5f5a4a;
+}
+
+#status-menu .status-button:hover {
+    transition: background .2s, color .2s, height .2s, box-shadow .2s;
+    background: #bd1111;
+    color: #d1cbb3;
+    box-shadow: 0px 0px 6px #bd1111;
+}
+
+#status-menu .status-button.on::after {
+    content: '';
+    display: block;
+    background: center;
+    background-color: transparent;
+    background-image: url();
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 42px;
+    position: absolute;
+    top: 25px;
+    pointer-events: none;
+}
+
+#status-menu .status-button::after {
+    display: none;
+}
+
+#status-menu .status-button.on.all_anime::after {
+    left: calc(75px + (100% - 160px) * .172 * 0);
+}
+
+#status-menu .status-button.on.watching::after,
+#status-menu .status-button.on.reading::after {
+    left: calc(75px + (100% - 160px) * .172 * 1);
+}
+
+#status-menu .status-button.on.completed::after {
+    left: calc(75px + (100% - 160px) * .172 * 2);
+}
+
+#status-menu .status-button.on.onhold::after {
+    left: calc(75px + (100% - 160px) * .172 * 3);
+}
+
+#status-menu .status-button.on.dropped::after {
+    left: calc(75px + (100% - 160px) * .172 * 4);
+}
+
+#status-menu .status-button.on.plantowatch::after,
+#status-menu .status-button.on.plantoread::after {
+    left: calc(75px + (100% - 160px) * .172 * 5);
+}
+
+.status-button.watching,
+.status-button.plantowatch,
+.status-button.reading,
+.status-button.plantoread {
+    overflow: hidden;
+    font-size: 0pt !important;
+    letter-spacing: -1px !important;
+}
+
+.status-button.watching::before {
+    content: 'Watching';
+    font-size: 2.5vh;
+    letter-spacing: 3.5px !important;
+}
+
+.status-button.reading::before {
+    content: 'Reading';
+    font-size: 2.5vh;
+    letter-spacing: 3.5px !important;
+}
+
+.status-button.plantowatch::before,
+.status-button.plantoread::before {
+    content: 'Planned';
+    font-size: 2.5vh;
+    letter-spacing: 3.5px !important;
+}
+
+/* Search Bar */
+
+.status-menu-container .search-container {
+	top: 125px;
+	left: 1470px;
+	z-index: 0;
+}
+
+#search-box {
+	padding-right: 0px;
+	border: 2px solid transparent;
+	border-radius: 13px;
+	margin-top: 0 !important;
+}
+
+#search-box.open {
+    left: 0px
+	width: 10px !important;
+	background-color: #000000;
+	border: 2px solid #FFFFFF;
+}
+
+#search-box input {
+	background: none;
+	border: none;
+	border-radius: 13px;
+	outline: none;
+	color: #FFFFFF;
+}
+
+#search-box.open input {
+	text-indent: 7.5px;
+	line-height: 20px;
+}
+
+.status-menu-container .search-container #search-button {
+	position: center;
+	left: 0px;
+	top: 0;
+	
+	width: 26px;
+	height: 26px;
+	border-radius: 13px;
+	margin-top: 0;
+	
+	text-align: center;
+}
+
+.open ~ #search-button {
+	pointer-events: none;
+}
+
+#search-button i {
+	color: #FFFFFF !important;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.open ~ #search-button i {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/* STATUS TITLE */
+
+.list-unit .list-status-title {
+    display: none;
+    margin: 0px;
+}
+
+.list-unit .list-status-title * {
+    margin: 0px !important;
+}
+
+/* Stats */
+
+.list-unit .list-stats {
+    display:block!important;
+    width: 475px;
+    position: absolute;
+    font-size: 9px;
+    background-color: black;
+    left: 714px;
+    border-radius: 10px 10px 10px 10px;
+    top: -40px
+}
+
+/* Affinity */ 
+
+.header .header-menu .header-info {
+    display: block;
+    background: #bd1111;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    top: 300px;
+    left: -636px;
+    width: 220px;
+    height: 30px;
+    text-align: center;
+    font-size: 9px;
+    font-family: Kiwi Maru;
+    margin-right: 0px;
+    margin-top: 0px;
+    line-height: 30px;
+}
+
+/* List Table Borders */
+.list-table {
+    border: none;
+}
+
+/* Rounded Edges*/
+.list-table .list-table-header .header-title.tags {
+    width: 120px;
+    border-radius: 0px 5px 0px 0px!important;
+}
+.list-table .list-table-header .header-title.status {
+    width: 10px;
+    border-radius: 5px 0px 0px 0px!important;
+}
+
+/* Sort row */
+.list-table .list-table-header {}
+
+.list-table tbody:first-child {
+    background-color: #ed411a;
+}
+
+.list-table .list-table-header .header-title {
+    background: none;
+    border: none;
+}
+
+.list-table .list-table-header .header-title a:hover {
+    color: #FFFFFF !important;
+}
+
+.list-table .list-table-header .header-title.title {
+	color: #000000
+}
+
+.list-table .list-table-header .header-title .link {
+	color: #000000
+}
+.list-table .list-table-header .header-title .link.sort {
+	color: #000000
+}
+
+/* Data rows */
+.list-table tbody.list-item {
+    background-color: #000000;
+    color: #FFFFFF;
+    transition: background-color .2s, color .2s;
+	opacity: 85%;
+}
+
+.list-table tbody.list-item:hover {
+    background-color: #000000;
+    color: #bd1111;
+    transition: background-color .2s, color .2s;
+}
+
+.list-table tbody.list-item::before {
+    content: '';
+    background-position: center;
+    background-image: null;
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 50px;
+    position: absolute;
+    left: -58px;
+    opacity: 0;
+    transition: opacity .2s;
+    pointer-events: none;
+}
+
+.list-table tbody.list-item:hover::before {
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+.list-table .list-table-data .data.title {
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-table tbody tr,
+.list-table tbody tr td {
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list-table .list-table-data a,
+.list-table .list-table-data a.edit-disabled,
+.list-table .list-table-data a:not(.edit-disabled):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.list-table .list-table-data .data {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-table .list-table-data .data.score a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+}
+
+.data.image {
+	width: 48px;
+	height: 64px;
+	margin: 4px 0 4px 8px;
+	border-radius: 1px 1px 1px 1px;
+	order: 1;
+}
+
+.list-table .list-table-data .data.image a {
+	display: block;
+}
+
+.data.image img {
+	width: 48px !important;
+	height: 64px !important;
+	border: none !important;
+	border-radius: 1px 1px 1px 1px;
+	object-fit: cover;
+}
+
+.list-table .list-table-data .tags .edit {
+    font-size: 7pt;
+	font-family: Exo;
+}
+
+.list-table .list-table-data .tags .edit,
+.list-table .list-table-data .tags .edit:hover {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+
+.list-table .list-table-data .data.status {
+    display: block;
+    height: 30px;
+    width: 5px;
+    margin-top: 36px;
+}
+
+.list-table .list-table-data .data.status.reading,
+.list-table .list-table-data .data.status.watching {
+    background-color: #59bfff;
+}
+
+.list-table .list-table-data .data.status.completed {
+    background-color: #00FF00;
+}
+
+.list-table .list-table-data .data.status.onhold {
+    background-color: #FFFF00;
+}
+
+.list-table .list-table-data .data.status.dropped {
+    background-color: #FF0000;
+}
+
+.list-table .list-table-data .data.status.plantoread,
+.list-table .list-table-data .data.status.plantowatch {
+    background-color: #808080;
+}
+
+/* Bottom Rounded Corners */
+.list-unit .loading-space,
+.list-unit .loading-space * {
+    background-color: #000000;
+    margin: 0px;
+    height: 5px;
+    width: 100%;
+    opacity: 85%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* Removal of Bottom Rounded Corner's Animation (Loading Space) */
+.fa-spin {
+    animation: none!important;
+    -webkit-animation: none!important;
+}
+
+.fa {
+   color: transparent!important;
+}
+
+
+/* Additional Features */
+.add-edit-more {
+    display: none;
+}
+
+.icon-watch {
+    display: none!important;
+}
+
+/* Footer */ 
+footer * {
+    display: none;
+}
