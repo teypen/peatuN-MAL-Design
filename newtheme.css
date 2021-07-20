@@ -47,7 +47,7 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
 }
 
 .anime .header .header-title {
-	top: 130px;
+	top: 140px;
 	left: -404px;
 	display: solid;
 	background-image: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/abannerbig.png);
@@ -58,7 +58,7 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
 }
 
 .manga .header .header-title {
-	top: 126px;
+	top: 136px;
 	left: -405px;
 	display: solid;
 	background-image: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/mbannerbig.png);
@@ -78,7 +78,7 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
 .btn-menu a.username {
         position: fixed;
 	top: 151px;
-	left: 1610px;
+	left: 1660px;
 	display: block;
 	width: 150px;
 	height: 150px;
@@ -448,8 +448,8 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
 /* Search Bar */
 
 .status-menu-container .search-container {
-	top: 125px;
-	left: 1470px;
+	top: 310px;
+	left: 1685px;
 	z-index: 0;
 }
 
@@ -748,7 +748,7 @@ cursor: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/imag
 	content:"";
 	position: absolute;
 	top: -350px;
-	left: 1610px;
+	left: 1660px;
 	width: 150px;
 	height: 150px;
 	background: url(https://raw.githubusercontent.com/teypen/peatuN-MAL-Design/main/images/hu%20tao%20pfp.png) no-repeat center top / cover;
